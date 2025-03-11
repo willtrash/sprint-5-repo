@@ -2,12 +2,12 @@ import pandas as pd
 import plotly.express as px
 import streamlit as st
 
+st.header('Análise de dados de veículos')
+
 car_data = pd.read_csv(
     'C:/Users/will/OneDrive/Desktop/sprint-5-repo/vehicles.csv')
 build_histogram = st.checkbox('Criar um histograma')
 build_scatterplot = st.checkbox('Criar um gráfico de dispersão')
-
-st.header('Análise de dados de veículos')
 
 if build_histogram:
     # escrever uma mensagem
